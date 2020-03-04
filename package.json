@@ -1,0 +1,24 @@
+{
+  "name": "Mochi-UI",
+  "version": "1.0.0",
+  "description": "Reuseable web components",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss css/tailwind.css -o public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NLNT/Mochi-UI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NLNT/Mochi-UI/issues"
+  },
+  "homepage": "https://github.com/NLNT/Mochi-UI#readme",
+  "dependencies": {
+    "postcss-cli": "^7.1.0",
+    "tailwindcss": "^1.2.0"
+  }
+}
