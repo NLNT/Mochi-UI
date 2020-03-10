@@ -1,0 +1,41 @@
+<svg width="280" height="140" viewBox="0 0 280 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="280" height="140" fill="white"/>
+<rect width="280" height="140" fill="#F4F5F7"/>
+<g filter="url(#filter0_dd)">
+<path d="M16 44C16 41.7909 17.7909 40 20 40H260C262.209 40 264 41.7909 264 44V97C264 99.2091 262.209 101 260 101H20C17.7909 101 16 99.2091 16 97V44Z" fill="white"/>
+<path d="M260 39.5H20C17.5147 39.5 15.5 41.5147 15.5 44V97C15.5 99.4853 17.5147 101.5 20 101.5H260C262.485 101.5 264.5 99.4853 264.5 97V44C264.5 41.5147 262.485 39.5 260 39.5Z" stroke="black" stroke-opacity="0.04"/>
+</g>
+<path d="M254 48L256 50L254 52" stroke="#9FA6B2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M254 68L256 70L254 72" stroke="#9FA6B2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M254 88L256 90L254 92" stroke="#9FA6B2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="23" y="47" width="30" height="2" rx="1" fill="#9FA6B2"/>
+<rect x="140" y="47" width="35" height="2" rx="1" fill="#9FA6B2"/>
+<rect x="23" y="67" width="40" height="2" rx="1" fill="#9FA6B2"/>
+<rect x="140" y="67" width="30" height="2" rx="1" fill="#9FA6B2"/>
+<rect x="23" y="87" width="35" height="2" rx="1" fill="#9FA6B2"/>
+<rect x="140" y="87" width="37" height="2" rx="1" fill="#9FA6B2"/>
+<rect x="23" y="52" width="24" height="2" rx="1" fill="#D2D6DC"/>
+<rect x="140" y="52" width="17" height="2" rx="1" fill="#D2D6DC"/>
+<rect x="23" y="72" width="20" height="2" rx="1" fill="#D2D6DC"/>
+<rect x="140" y="72" width="24" height="2" rx="1" fill="#D2D6DC"/>
+<rect x="23" y="92" width="25" height="2" rx="1" fill="#D2D6DC"/>
+<rect x="140" y="92" width="22" height="2" rx="1" fill="#D2D6DC"/>
+<rect x="16" y="60" width="248" height="1" fill="#E5E7EB"/>
+<rect x="16" y="80" width="248" height="1" fill="#E5E7EB"/>
+<defs>
+<filter id="filter0_dd" x="10" y="37" width="260" height="73" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="3"/>
+<feGaussianBlur stdDeviation="2.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="1"/>
+<feGaussianBlur stdDeviation="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0"/>
+<feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>

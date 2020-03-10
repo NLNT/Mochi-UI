@@ -1,0 +1,48 @@
+<svg width="280" height="140" viewBox="0 0 280 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="280" height="140">
+<rect width="280" height="140" fill="#F9FAFC"/>
+</mask>
+<g mask="url(#mask0)">
+<rect width="280" height="140" fill="#F4F5F7"/>
+<rect x="35" y="24" width="30" height="4" rx="2" fill="#6B7280"/>
+<g filter="url(#filter0_d)">
+<mask id="path-4-inside-1" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35 40C35 37.7909 36.7909 36 39 36H241C243.209 36 245 37.7909 245 40V72C245 74.2091 243.209 76 241 76H39C36.7909 76 35 74.2091 35 72V40ZM35 86C35 83.7909 36.7909 82 39 82H169C171.209 82 173 83.7909 173 86V141H35V86ZM183 82C180.791 82 179 83.7909 179 86V141H245V86C245 83.7909 243.209 82 241 82H183Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35 40C35 37.7909 36.7909 36 39 36H241C243.209 36 245 37.7909 245 40V72C245 74.2091 243.209 76 241 76H39C36.7909 76 35 74.2091 35 72V40ZM35 86C35 83.7909 36.7909 82 39 82H169C171.209 82 173 83.7909 173 86V141H35V86ZM183 82C180.791 82 179 83.7909 179 86V141H245V86C245 83.7909 243.209 82 241 82H183Z" fill="white"/>
+<path d="M173 141V142H174V141H173ZM35 141H34V142H35V141ZM179 141H178V142H179V141ZM245 141V142H246V141H245ZM39 35C36.2386 35 34 37.2386 34 40H36C36 38.3431 37.3431 37 39 37V35ZM241 35H39V37H241V35ZM246 40C246 37.2386 243.761 35 241 35V37C242.657 37 244 38.3431 244 40H246ZM246 72V40H244V72H246ZM241 77C243.761 77 246 74.7614 246 72H244C244 73.6569 242.657 75 241 75V77ZM39 77H241V75H39V77ZM34 72C34 74.7614 36.2386 77 39 77V75C37.3431 75 36 73.6569 36 72H34ZM34 40V72H36V40H34ZM39 81C36.2386 81 34 83.2386 34 86H36C36 84.3431 37.3431 83 39 83V81ZM169 81H39V83H169V81ZM174 86C174 83.2386 171.761 81 169 81V83C170.657 83 172 84.3431 172 86H174ZM174 141V86H172V141H174ZM35 142H173V140H35V142ZM34 86V141H36V86H34ZM180 86C180 84.3431 181.343 83 183 83V81C180.239 81 178 83.2386 178 86H180ZM180 141V86H178V141H180ZM245 140H179V142H245V140ZM244 86V141H246V86H244ZM241 83C242.657 83 244 84.3431 244 86H246C246 83.2386 243.761 81 241 81V83ZM183 83H241V81H183V83Z" fill="#D2D6DC" mask="url(#path-4-inside-1)"/>
+</g>
+<rect width="280" height="16" fill="white"/>
+<rect y="15" width="280" height="1" fill="#D2D6DC"/>
+<rect x="151" y="7" width="16" height="2" rx="1" fill="#9FA6B2"/>
+<rect x="177" y="7" width="16" height="2" rx="1" fill="#9FA6B2"/>
+<rect x="203" y="7" width="16" height="2" rx="1" fill="#9FA6B2"/>
+<rect x="229" y="7" width="16" height="2" rx="1" fill="#9FA6B2"/>
+<circle cx="38" cy="8" r="3" fill="#6B7280"/>
+<g opacity="0.25">
+<rect x="35" width="12" height="140" fill="#F8B4D9"/>
+<rect x="53" width="12" height="140" fill="#F8B4D9"/>
+<rect x="71" width="12" height="140" fill="#F8B4D9"/>
+<rect x="89" width="12" height="140" fill="#F8B4D9"/>
+<rect x="107" width="12" height="140" fill="#F8B4D9"/>
+<rect x="125" width="12" height="140" fill="#F8B4D9"/>
+<rect x="143" width="12" height="140" fill="#F8B4D9"/>
+<rect x="161" width="12" height="140" fill="#F8B4D9"/>
+<rect x="179" width="12" height="140" fill="#F8B4D9"/>
+<rect x="197" width="12" height="140" fill="#F8B4D9"/>
+<rect x="215" width="12" height="140" fill="#F8B4D9"/>
+<rect x="233" width="12" height="140" fill="#F8B4D9"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" x="33" y="35" width="214" height="109" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="1"/>
+<feGaussianBlur stdDeviation="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>
