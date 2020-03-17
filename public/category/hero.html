@@ -17,7 +17,7 @@
 
   <!-- Navigation - Component  -->
   <nav class="p-4 border-b border-gray-200">
-    <div class="max-w-6xl mx-auto flex justify-between content-center">
+    <div class="max-w-screen-xl mx-auto flex justify-between content-center">
       <!-- Logo -->
       <a href="#" class="flex">
         <img src="https://raw.githubusercontent.com/NLNT/Mochi-UI/master/img/logo.svg?sanitize=true" alt="logo" class="w-32">
@@ -36,12 +36,12 @@
 
 
   <!-- Header - component -->
-  <header class="bg-gray-100">
+  <header class="pt-8">
     <div class="max-w-6xl mx-auto p-6">
-      <div class="flex flex-wrap justify-between items-center">
+      <div class="flex flex-wrap justify-between items-center border-b pb-5">
         <div>
           <!-- Breadcrumb - component -->
-          <ul class="flex text-gray-800">
+          <ul class="flex flex-wrap text-gray-800">
             <li class="flex items-center">
               <a href="/public/index.html" class="hover:underline">Home</a> 
               <span>
@@ -52,7 +52,7 @@
             <li class="font-medium text-gray-900 cursor-default">Hero components</li>
           </ul>
           <!-- End - Breadcrumb component -->
-          <h5 class="text-2xl mt-1 text-gray-800 font-semibold">Hero Components</h5>
+          <h1 class="text-2xl mt-1 text-gray-800 font-semibold">Hero Components</h1>
         </div>
         
         <!-- Button - component -->
@@ -73,7 +73,32 @@
 
 
   <main class="h-screen">
-    
+    <!-- showcase - component -->
+    <section>
+      <div class="max-w-6xl mx-auto py-6 sm:px-6">
+        <!-- Card - component -->
+        <div class="border rounded-lg max-h-screen text-gray-700 shadow">
+          <div class="flex flex-wrap justify-between p-5 sm:p-6 border-b rounded-lg shadow-sm">
+            <h3 class="font-medium pr-3">Hero with image on the right</h3>
+            <div>
+              <a href="#" class="flex items-center hover:underline font-medium">
+                Codepen
+                <span><svg class="w-5 h-5 ml-2" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs/><path d="M10 6H6L4 8v10l2 2h10l2-2v-4M14 4h6m0 0v6m0-6L10 14" stroke="#4A5568" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span> 
+              </a>
+            </div>
+          </div>
+
+          <div class="p-6 py-20 bg-gray-100 flex justify-center items-center">
+            <div class="h-64">
+              
+            </div>
+          </div>
+        </div>
+        <!-- End - Card component -->
+      </div>
+    </section>
+    <!-- End - Showcase component -->
   </main>
 
 
@@ -84,7 +109,7 @@
   <footer>
     <div class="max-w-6xl mx-auto text-gray-600 p-6 flex flex-col justify-between items-center sm:flex-row">
       <p class="pb-2 sm:pb-0">&copy; 2020 All rights reserved</p>
-      <p>A project by <span class="font-semibold hover:underline"><a href="#">Author</a></span></p>
+      <p>A project by <span class="font-semibold hover:underline"><a href="https://github.com/NLNT">Thanh Nguyen</a></span></p>
     </div>
   </footer>
   <!-- End - footer component -->
