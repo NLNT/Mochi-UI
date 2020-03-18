@@ -38,7 +38,7 @@
 
 
   <!-- Header - component -->
-  <header class="pt-8">
+  <header class="pt-8" x-data="{ open: false }">
     <div class="max-w-6xl mx-auto p-6">
       <div class="flex flex-wrap justify-between items-center border-b pb-5">
         <div>
@@ -59,7 +59,7 @@
         
         <!-- Button - component -->
         <div class="flex flex-shrink-0 mt-4 sm:mt-0">
-          <a href="#" class="flex text-lg font-medium text-gray-700 bg-white rounded-full shadow hover:shadow-md transition-shadow duration-150 py-3 px-6 leading-tight">
+          <a href="#" class="flex text-lg font-medium text-gray-700 bg-white rounded-full shadow hover:shadow-md transition-shadow duration-150 py-3 px-6 leading-tight" @click="open = true">
             <span>
               <svg class="w-5 w-5 mr-2 stroke-current text-gray-700" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs/><path d="M12 4v16m8-8H4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
@@ -67,19 +67,13 @@
           </a>
         </div>
         <!-- End - Button component -->
-        
       </div>
     </div>
 
-
-
-
-
-    
     <!-- Modal - component -->
-    <div class="fixed h-screen inset-0 flex justify-center items-end sm:items-center" style="background-color: rgba(0,0,0,0.8);">
+    <div class="fixed h-screen inset-0 flex justify-center items-end sm:items-center" style="background-color: rgba(0,0,0,0.8);" x-show="open">
 
-      <div class="bg-gray-100 overflow-hidden rounded-t-lg sm:rounded-lg shadow-2xl max-w-xl w-full">
+      <div class="bg-gray-100 overflow-hidden rounded-t-lg sm:rounded-lg shadow-2xl max-w-xl w-full" @click.away="open = false">
         <!-- Top -->
         <div class="relative pt-8 pb-10 px-6  bg-white shadow-sm rounded-lg">
           <div class="mb-6">
@@ -87,15 +81,15 @@
             <p class="leading-relaxed text-gray-600">Send us a codepen link you want to add to Mochi UI. You can also contribute to this project on our <a href="https://github.com/NLNT/" class="underline hover:text-black">Github</a>.</p>
           </div>
 
-          <form class="flex flex-col" name="component-suggestion" id="comp-suggest" method="POST" netlify>
-            <label for="codepen" class="font-medium mb-2">Codepen link</label>
-            <input class="w-full sm:max-w-sm h-12 py-6 px-4 border rounded-lg shadow-sm transition-shadow duration-150 focus:shadow-md focus:outline-none" type="text" name="codepen" placeholder="https://www.codepen.io/example">
+          <form class="flex flex-col" name="comp-suggest" id="comp-suggest" method="POST" netlify>
+            <label for="component-suggestion" class="font-medium mb-2">Codepen link</label>
+            <input class="w-full sm:max-w-sm h-12 py-6 px-4 border rounded-lg shadow-sm transition-shadow duration-150 focus:shadow-md focus:outline-none" type="text" name="component-suggestion" placeholder="https://www.codepen.io/example">
           </form>
         </div>
 
         <!-- Bottom -->
         <div class="bg-gray-100 py-3 p-4 sm:px-6 flex flex-col-reverse sm:flex-row justify-end">
-          <button class="flex-1 sm:flex-initial text-gray-800 bg-white py-2 px-5 mt-2 sm:mt-0 sm:mr-3 rounded-lg font-medium border hover:text-gray-600">Cancel</button>
+          <button class="flex-1 sm:flex-initial text-gray-800 bg-white py-2 px-5 mt-2 sm:mt-0 sm:mr-3 rounded-lg font-medium border hover:text-gray-600" @click="open = false">Cancel</button>
           <button type="submit" form="comp-suggest" class="flex-1 sm:flex-initial text-white bg-indigo-600 py-2 px-5 rounded-lg font-medium border hover:bg-indigo-400">Submit</button>
         </div>
 
