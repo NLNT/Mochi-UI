@@ -11,8 +11,10 @@
   <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800&display=swap&subset=vietnamese" rel="stylesheet">
   <!-- Favicon -->
   <link rel="Mochi UI logo icon" type="image/svg" href="https://raw.githubusercontent.com/NLNT/Mochi-UI/master/img/favicon.svg?sanitize=true">
+  <!-- Javascripts -->
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
 </head>
-<body class="font-inter">
+<body class="font-inter relative">
 
 
   <!-- Navigation - Component  -->
@@ -68,8 +70,49 @@
         
       </div>
     </div>
+
+
+
+
+
+    
+    <!-- Modal - component -->
+    <div class="fixed h-screen inset-0 flex justify-center items-end sm:items-center" style="background-color: rgba(0,0,0,0.8);">
+
+      <div class="bg-gray-100 overflow-hidden rounded-t-lg sm:rounded-lg shadow-2xl max-w-xl w-full">
+        <!-- Top -->
+        <div class="relative pt-8 pb-10 px-6  bg-white shadow-sm rounded-lg">
+          <div class="mb-6">
+            <h3 class="text-2xl pb-2 text-gray-800 font-semibold">Suggest a component</h3>
+            <p class="leading-relaxed text-gray-600">Send us a codepen link you want to add to Mochi UI. You can also contribute to this project on our <a href="https://github.com/NLNT/" class="underline hover:text-black">Github</a>.</p>
+          </div>
+
+          <form class="flex flex-col" name="component-suggestion" id="comp-suggest" method="POST" netlify>
+            <label for="codepen" class="font-medium mb-2">Codepen link</label>
+            <input class="w-full sm:max-w-sm h-12 py-6 px-4 border rounded-lg shadow-sm transition-shadow duration-150 focus:shadow-md focus:outline-none" type="text" name="codepen" placeholder="https://www.codepen.io/example">
+          </form>
+        </div>
+
+        <!-- Bottom -->
+        <div class="bg-gray-100 py-3 p-4 sm:px-6 flex flex-col-reverse sm:flex-row justify-end">
+          <button class="flex-1 sm:flex-initial text-gray-800 bg-white py-2 px-5 mt-2 sm:mt-0 sm:mr-3 rounded-lg font-medium border hover:text-gray-600">Cancel</button>
+          <button type="submit" form="comp-suggest" class="flex-1 sm:flex-initial text-white bg-indigo-600 py-2 px-5 rounded-lg font-medium border hover:bg-indigo-400">Submit</button>
+        </div>
+
+      </div>
+    </div>
+    <!-- End - Modal component -->
+
   </header>
   <!-- End - Header component -->
+
+
+
+
+
+
+
+
 
 
 
