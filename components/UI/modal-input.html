@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button rounded with with icon after</title>
+    <!-- Tailwind CSS link -->
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+<!-- ============================================================================= -->
+
+
+
+
+<!-- Modal - component -->
+<div class="fixed h-screen inset-0 flex justify-center items-end sm:items-center" style="background-color: rgba(0,0,0,0.8);">
+  <div class="bg-gray-100 overflow-hidden rounded-t-lg sm:rounded-lg shadow-2xl max-w-xl w-full">
+    <!-- Top -->
+    <div class="relative pt-8 pb-10 px-6  bg-white shadow-sm rounded-lg">
+      <div class="mb-6">
+        <h3 class="text-2xl pb-2 text-gray-800 font-semibold">Suggest a component</h3>
+        <p class="leading-relaxed text-gray-600">Send us a codepen link you want to add to Mochi UI. You can also contribute to this project on our <a href="#" class="underline hover:text-black">Github</a>.</p>
+      </div>
+      <!-- Form -->
+      <form class="flex flex-col" id="#" method="#">
+        <label for="inputName" class="font-medium mb-2">Codepen link</label>
+        <input class="w-full sm:max-w-sm h-12 py-6 px-4 border rounded-lg shadow-sm transition-shadow duration-150 focus:shadow-md focus:outline-none" type="text" name="inputName" placeholder="https://www.codepen.io/example">
+      </form>
+    </div>
+
+    <!-- Bottom -->
+    <div class="bg-gray-100 py-3 p-4 sm:px-6 flex flex-col-reverse sm:flex-row justify-end">
+      <button class="flex-1 sm:flex-initial text-gray-800 bg-white py-2 px-5 mt-2 sm:mt-0 sm:mr-3 rounded-lg font-medium border hover:text-gray-600">Cancel</button>
+      <button type="#" form="#" class="flex-1 sm:flex-initial text-white bg-indigo-600 py-2 px-5 rounded-lg font-medium border hover:bg-indigo-400">Submit</button>
+    </div>
+
+  </div>
+</div>
+<!-- End - Modal component -->
+
+
+<!-- ============================================================================= -->
+
