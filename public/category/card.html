@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mochi UI - TailwindCSS reuseable components</title>
+  <title>Card Components - Mochi UI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
   <!-- CSS/Icon links -->
@@ -51,10 +51,10 @@
               </span>
             </li>
 
-            <li class="font-medium text-gray-900 cursor-default">CATEGORY NAME</li>
+            <li class="font-medium text-gray-900 cursor-default">Card components</li>
           </ul>
           <!-- End - Breadcrumb component -->
-          <h1 class="text-2xl mt-1 text-gray-800 font-semibold">CATEGORY NAME</h1>
+          <h1 class="text-2xl mt-1 text-gray-800 font-semibold">Card Components</h1>
         </div>
         
         <!-- Button - component -->
@@ -105,10 +105,12 @@
   <main>
     <section>
       <div class="max-w-6xl mx-auto sm:px-6">
+        
+
         <!-- Card - component -->
         <div class="rounded-lg overflow-hidden text-gray-700 mt-10 shadow">
           <div class="flex flex-wrap justify-between p-5 sm:p-6 border-b rounded-lg shadow-sm">
-            <h3 class="font-medium pr-3">COMPONENT NAME</h3>
+            <h3 class="font-medium pr-3">Card with title & badge</h3>
             <div>
               <a href="#" class="flex items-center hover:underline font-medium">
                 Codepen
@@ -118,16 +120,85 @@
             </div>
           </div>
 
-          <div class="bg-gray-100 flex items-center justify-center" style="min-height: 16rem">
+          <div class="bg-gray-100 py-12 flex items-center justify-center" style="min-height: 16rem">
 
-               <!-- ========= COMPONENT HERE ========= -->
+              <!-- Card - component -->
+              <div class="w-full sm:w-1/2 lg:w-1/3 px-3 pb-6">
+                <a href="#">
+                  <div class="relative bg-white rounded-lg transition-shadow ease-out duration-200 shadow hover:shadow-md">
+                    <img src="https://raw.githubusercontent.com/NLNT/Mochi-UI/master/img/Components%20thumbnails/elements-headers.svg?sanitize=true" alt="w-280 x h-140" class="w-full rounded-lg shadow-xs">
+                    <div class="flex justify-between items-center p-4">
+                      <p>Navigation</p>
+                      <p class="bg-gray-200 py-px px-4 text-xs rounded-full">1</p>
+                    </div>
+                    <!-- Whiten hover effect -->
+                    <div class="absolute bg-white rounded-lg inset-0 opacity-0 transition-opacity duration-150 ease-out hover:opacity-25"></div>
+                  </div>
+                </a>
+              </div>
+              <!-- End - card component -->
 
           </div>
         </div>
         <!-- End - Card component -->
 
 
+
+
+
+
+
+
         <!-- Card - component -->
+        <div class="rounded-lg overflow-hidden text-gray-700 mt-20 shadow">
+          <div class="flex flex-wrap justify-between p-5 sm:p-6 border-b rounded-lg shadow-sm">
+            <h3 class="font-medium pr-3">Card for component</h3>
+            <div>
+              <a href="#" class="flex items-center hover:underline font-medium">
+                Codepen
+                <span><svg class="w-5 h-5 ml-2" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs/><path d="M10 6H6L4 8v10l2 2h10l2-2v-4M14 4h6m0 0v6m0-6L10 14" stroke="#4A5568" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span> 
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-gray-100 p-6 sm:p-10 py-16 flex items-center justify-center" style="min-height: 16rem">
+
+            <!-- Showcased card -->
+            <div class="flex-1 bg-white rounded-lg overflow-hidden text-gray-700 shadow">
+              <div class="flex flex-wrap justify-between p-5 sm:p-6 border-b rounded-lg shadow-sm">
+                <h3 class="font-medium pr-3">Card</h3>
+                <div>
+                  <a href="#" class="flex items-center hover:underline font-medium">
+                    Codepen
+                    <span><svg class="w-5 h-5 ml-2" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs/><path d="M10 6H6L4 8v10l2 2h10l2-2v-4M14 4h6m0 0v6m0-6L10 14" stroke="#4A5568" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span> 
+                  </a>
+                </div>
+              </div>
+
+              <div class="bg-gray-100" style="min-height: 16rem;"></div>
+              
+              </div>
+            </div>
+            <!-- End - Showcased Card component -->
+          </div>
+          <!-- End - Card component -->
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+          <!-- Card - component -->
         <div class="rounded-lg overflow-hidden text-gray-700 mt-20 shadow">
           <div class="flex flex-wrap justify-between p-5 sm:p-6 border-b rounded-lg shadow-sm">
             <h3 class="font-medium pr-3">Coming soon</h3>
@@ -146,6 +217,9 @@
 
         </div>
         <!-- End - Card component -->
+
+        
+
       </div>
     </section>
   </main>
