@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mochi UI - TailwindCSS reuseable components</title>
+  <title>Modal Components - Mochi UI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
   <!-- CSS/Icon links -->
@@ -45,16 +45,16 @@
           <!-- Breadcrumb - component -->
           <ul class="flex flex-wrap text-gray-800">
             <li class="flex items-center">
-              <a href="/public/index.html" class="hover:underline">Home</a> 
+              <a href="../index.html" class="hover:underline">Home</a> 
               <span>
                 <svg  class="w-4 h-4 stroke-current text-gray-700 mx-2" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs/><path d="M9 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </span>
             </li>
 
-            <li class="font-medium text-gray-900 cursor-default">CATEGORY NAME</li>
+            <li class="font-medium text-gray-900 cursor-default">Modal components</li>
           </ul>
           <!-- End - Breadcrumb component -->
-          <h1 class="text-2xl mt-1 text-gray-800 font-semibold">CATEGORY NAME</h1>
+          <h1 class="text-2xl mt-1 text-gray-800 font-semibold">Modal Components</h1>
         </div>
         
         <!-- Button - component -->
@@ -108,7 +108,7 @@
         <!-- Card - component -->
         <div class="rounded-lg overflow-hidden text-gray-700 mt-10 shadow">
           <div class="flex flex-wrap justify-between p-5 sm:p-6 border-b rounded-lg shadow-sm">
-            <h3 class="font-medium pr-3">COMPONENT NAME</h3>
+            <h3 class="font-medium pr-3">Modal with input</h3>
             <div>
               <a href="#" class="flex items-center hover:underline font-medium">
                 Codepen
@@ -118,9 +118,33 @@
             </div>
           </div>
 
-          <div class="bg-gray-100 flex items-center justify-center" style="min-height: 16rem">
+          <div class="bg-gray-100 py-12 flex items-center justify-center" style="min-height: 16rem">
 
-               <!-- ========= COMPONENT HERE ========= -->
+               <!-- Modal - component -->
+<div class=" flex justify-center items-end sm:items-center">
+  <div class="bg-gray-100 overflow-hidden rounded-t-lg sm:rounded-lg shadow-2xl max-w-xl w-full">
+    <!-- Top -->
+    <div class="relative pt-8 pb-10 px-6  bg-white shadow-sm rounded-lg">
+      <div class="mb-6">
+        <h3 class="text-2xl pb-2 text-gray-800 font-semibold">Suggest a component</h3>
+        <p class="leading-relaxed text-gray-600">Send us a codepen link you want to add to Mochi UI. You can also contribute to this project on our <a href="#" class="underline hover:text-black">Github</a>.</p>
+      </div>
+      <!-- Form -->
+      <form class="flex flex-col" id="#" method="#">
+        <label for="inputName" class="font-medium mb-2">Codepen link</label>
+        <input class="w-full sm:max-w-sm h-12 py-6 px-4 border rounded-lg shadow-sm transition-shadow duration-150 focus:shadow-md focus:outline-none" type="text" name="inputName" placeholder="https://www.codepen.io/example">
+      </form>
+    </div>
+
+    <!-- Bottom -->
+    <div class="bg-gray-100 py-3 p-4 sm:px-6 flex flex-col-reverse sm:flex-row justify-end">
+      <button class="flex-1 sm:flex-initial text-gray-800 bg-white py-2 px-5 mt-2 sm:mt-0 sm:mr-3 rounded-lg font-medium border hover:text-gray-600">Cancel</button>
+      <button class="flex-1 sm:flex-initial text-white bg-indigo-600 py-2 px-5 rounded-lg font-medium border hover:bg-indigo-400">Submit</button>
+    </div>
+
+  </div>
+</div>
+<!-- End - Modal component -->
 
           </div>
         </div>
