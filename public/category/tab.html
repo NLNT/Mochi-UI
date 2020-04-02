@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tab Components - Mochi UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <!-- CSS/Icon links -->
+  <link rel="stylesheet" href="../style.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800&display=swap&subset=vietnamese" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="Mochi UI logo icon" type="image/svg" href="https://raw.githubusercontent.com/NLNT/Mochi-UI/master/img/favicon.svg?sanitize=true">
+  <!-- Javascripts -->
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+</head>
+<body class="font-inter relative"  x-data="{ open: false }">
+
+
+  <!-- Navigation - Component  -->
+  <nav class="p-4 border-b border-gray-200">
+    <div class="max-w-screen-xl mx-auto flex justify-between content-center">
+      <!-- Logo -->
+      <a href="../index.html" class="flex">
+        <img src="https://raw.githubusercontent.com/NLNT/Mochi-UI/master/img/logo.svg?sanitize=true" alt="logo" class="w-32">
+      </a>
+      <!-- CTA -->
+      <div class="flex flex-shrink-0">
+        <a href="https://github.com/NLNT/Mochi-UI" class="flex text-indigo-800 bg-indigo-200 hover:bg-indigo-300 text-lg font-medium rounded-full self-center py-2 px-4">Contribute
+        <span class="mt-px">
+          <svg class="w-6 h-6 ml-2 mt-px stroke-current text-indigo-800" xmlns="http://www.w3.org/2000/svg"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!-- End - navigation component -->
+
+
+  <!-- Header - component -->
+  <header class="pt-8">
+    <div class="max-w-6xl mx-auto p-6">
+      <div class="flex flex-wrap justify-between items-center border-b pb-5">
+        <div>
+          <!-- Breadcrumb - component -->
+          <ul class="flex flex-wrap text-gray-800">
+            <li class="flex items-center">
+              <a href="../index.html" class="hover:underline">Home</a> 
+              <span>
+                <svg  class="w-4 h-4 stroke-current text-gray-700 mx-2" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs/><path d="M9 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </li>
+
+            <li class="font-medium text-gray-900 cursor-default">Tab components</li>
+          </ul>
+          <!-- End - Breadcrumb component -->
+          <h1 class="text-2xl mt-1 text-gray-800 font-semibold">Tab Components</h1>
+        </div>
+        
+        <!-- Button - component -->
+        <div class="flex flex-shrink-0 mt-4 sm:mt-0">
+          <a href="#" class="flex text-lg font-medium text-gray-700 bg-white rounded-full shadow hover:shadow-md transition-shadow duration-150 py-3 px-6 leading-tight" @click="open = true">
+            <span>
+              <svg class="w-5 w-5 mr-2 stroke-current text-gray-700" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs/><path d="M12 4v16m8-8H4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            Add
+          </a>
+        </div>
+        <!-- End - Button component -->
+      </div>
+    </div>
+
+    <!-- Modal - component -->
+    <div class="fixed h-screen inset-0 flex justify-center items-end sm:items-center" style="background-color: rgba(0,0,0,0.8);" x-show="open">
+
+      <div class="bg-gray-100 overflow-hidden rounded-t-lg sm:rounded-lg shadow-2xl max-w-xl w-full" @click.away="open = false">
+        <!-- Top -->
+        <div class="relative pt-8 pb-10 px-6  bg-white shadow-sm rounded-lg">
+          <div class="mb-6">
+            <h3 class="text-2xl pb-2 text-gray-800 font-semibold">Suggest a component</h3>
+            <p class="leading-relaxed text-gray-600">Send us a codepen link you want to add to Mochi UI. You can also contribute to this project on our <a href="https://github.com/NLNT/" class="underline hover:text-black">Github</a>.</p>
+          </div>
+
+          <form class="flex flex-col" name="comp-suggest" id="comp-suggest" method="POST" netlify>
+            <label for="component-suggestion" class="font-medium mb-2">Codepen link</label>
+            <input class="w-full sm:max-w-sm h-12 py-6 px-4 border rounded-lg shadow-sm transition-shadow duration-150 focus:shadow-md focus:outline-none" type="text" name="component-suggestion" placeholder="https://www.codepen.io/example">
+          </form>
+        </div>
+
+        <!-- Bottom -->
+        <div class="bg-gray-100 py-3 p-4 sm:px-6 flex flex-col-reverse sm:flex-row justify-end">
+          <button class="flex-1 sm:flex-initial text-gray-800 bg-white py-2 px-5 mt-2 sm:mt-0 sm:mr-3 rounded-lg font-medium border hover:text-gray-600" @click="open = false">Cancel</button>
+          <button type="submit" form="comp-suggest" class="flex-1 sm:flex-initial text-white bg-indigo-600 py-2 px-5 rounded-lg font-medium border hover:bg-indigo-400">Submit</button>
+        </div>
+
+      </div>
+    </div>
+    <!-- End - Modal component -->
+  </header>
+  <!-- End - Header component -->
+
+
+
+
+
+  <!-- ======================== Component Showcase ============================= -->
+  <main>
+    <section>
+      <div class="max-w-6xl mx-auto sm:px-6">
+        <!-- Card - component -->
+        <div class="rounded-lg overflow-hidden text-gray-700 mt-10 shadow">
+          <div class="flex flex-wrap justify-between p-5 sm:p-6 border-b rounded-lg shadow-sm">
+            <h3 class="font-medium pr-3">Tab</h3>
+            <div>
+              <a href="#" class="flex items-center hover:underline font-medium">
+                Codepen
+                <span><svg class="w-5 h-5 ml-2" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs/><path d="M10 6H6L4 8v10l2 2h10l2-2v-4M14 4h6m0 0v6m0-6L10 14" stroke="#4A5568" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span> 
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-gray-100 py-12 flex items-center justify-center" style="min-height: 16rem">
+<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+
+
+<!-- Tab - component  -->
+<div class="max-w-5xl mx-auto p-6 flex justify-center sm:justify-start">
+  <div class="inline-flex font-medium bg-white text-center border border-gray-200 text-gray-600" style="border-radius: .9rem">
+    <a class="flex-1 px-16 py-4 transition-colors duration-200 text-gray-800 bg-gray-300 shadow-sm cursor-pointer" style="border-radius: .9rem">Settings</a>
+    <a class="flex-1 px-16 py-4 transition-colors duration-200 hover:text-gray-800 cursor-pointer" style="border-radius: .9rem">History</a>
+  </div>
+</div>
+<!-- End - Tab component  -->
+
+            
+<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+
+          </div>
+        </div>
+        <!-- End - Card component -->
+
+
+        <!-- Card - component -->
+        <div class="rounded-lg overflow-hidden text-gray-700 mt-20 shadow">
+          <div class="flex flex-wrap justify-between p-5 sm:p-6 border-b rounded-lg shadow-sm">
+            <h3 class="font-medium pr-3">Coming soon</h3>
+            <div>
+              <a href="#" class="flex items-center hover:underline font-medium" @click="open = true">
+                Suggest
+                <span><svg class="w-5 h-5 ml-2" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs/><path d="M10 6H6L4 8v10l2 2h10l2-2v-4M14 4h6m0 0v6m0-6L10 14" stroke="#4A5568" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span> 
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-gray-100 py-64 text-center">
+            More coming up soon, you can suggest your component to Mochi UI.
+          </div>
+
+        </div>
+        <!-- End - Card component -->
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+  <!-- Footer -component -->
+  <footer class="mt-20">
+    <div class="max-w-6xl mx-auto text-gray-600 p-6 flex flex-col justify-between items-center sm:flex-row">
+      <p class="pb-2 sm:pb-0">&copy; 2020, Released under MIT license</p>
+      <p>A project by <span class="font-semibold hover:underline"><a href="https://github.com/NLNT">Thanh Nguyen</a></span></p>
+    </div>
+  </footer>
+  <!-- End - footer component -->
+  
+
+
+</body>
+</html>
